@@ -8,11 +8,12 @@ import java.util.HashSet;
 import java.util.Set;
 
 
+
 @Entity
-@Table(name = "user")
+@Table(name = "t_user")
 @Getter
 @Setter
-public class User extends BaseEntity{
+public class User extends BaseEntity {
 
     private String username;
 
@@ -23,4 +24,7 @@ public class User extends BaseEntity{
             inverseJoinColumns = {@JoinColumn(name = "role_id")})
 
     private Set<Role> roles = new HashSet<>();
+
+
+
 }

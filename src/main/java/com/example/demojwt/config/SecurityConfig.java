@@ -2,6 +2,7 @@ package com.example.demojwt.config;
 
 import com.example.demojwt.filter.JwtRequestFilter;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.jms.annotation.EnableJms;
 import org.springframework.security.config.annotation.method.configuration.EnableGlobalMethodSecurity;
 import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
@@ -10,6 +11,8 @@ import org.springframework.security.web.authentication.UsernamePasswordAuthentic
 
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true)
+// phathien @JmsListener
+@EnableJms
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
 
 

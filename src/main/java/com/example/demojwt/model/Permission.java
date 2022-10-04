@@ -7,10 +7,10 @@ import lombok.Setter;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "permission")
+@Table(name = "t_permission")
 @Getter
 @Setter
-public class Permission extends  BaseEntity{
+public class Permission extends BaseEntity {
 
     private String permissionName;
 
